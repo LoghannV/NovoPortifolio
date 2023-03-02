@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/projetos.css">
+    <link rel="stylesheet" href="css/carrousel.css">
+</head>
+<body>
+    <div id="boxIcon">
+        <div class="caixa">
+            <div class="conteudo">
+                <img src="img/icon/avatar.jpg" alt="">
+                <h2>Loghann Souza <br><span>Dev. Front-End</span></h2>
+                <span></span>
+                <div class="box-option">
+                    <a href="#boxProject">Projetos</a>
+                    <a href="https://github.com/LoghannV" class="ButtonGIT" target="_blank">GitHUB</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="boxProject"> 
+        <h2>Projetos</h2>
+        <br>
+        <div class="container">
+           
+            <!--CLARO carta-->
+            <article class="carta inativo">
+                <div class="flip">         
+                    <section class="front-carta claro">
+                        <img src="img/imgProjetos/claro.png" alt="Carta Frente" class="img-carta"/>
+                    </section>
+                    <section class="back-carta">
+                        <h3>Claro - Projetos </h3>
+                        <p>Interfaces de vendas</p>
+                        <img src="img/imgProjetos/vocalcom.jpg" alt="" class="img-interface">
+                        <div class="box-tags">
+                            <span class="tecnologia">HTML</span>
+                            <span class="tecnologia">CSS</span>
+                            <span class="tecnologia">JAVASCRIPT</span>
+                            <span class="tecnologia">SQL</span>        
+                            <span class="tecnologia">Vocalcom</span>  
+                        </div>
+                    </section>
+                </div>
+            </article>
+            <!--NETFLIX carta-->
+            <article class="carta inativo">
+                <div class="flip">         
+                    <section class="front-carta">
+                        <img src="img/imgProjetos/netflix.png" alt="Carta Frente" class="img-carta"/>
+                    </section>
+                    <section class="back-carta">
+                        <div class="flip">         
+                            <section class="front-carta claro">
+                                <img src="img/imgProjetos/netflix.png" alt="Carta Frente" class="img-carta"/>
+                            </section>
+                            <section class="back-carta">
+                                <h3>Netflix - Projetos </h3>
+                                <p>Interfaces de vendas</p>
+                                <img src="img/imgProjetos/netflix_interaface.png" alt="" class="img-interface">
+                                <div class="box-tags">
+                                    <span class="tecnologia">HTML</span>
+                                    <span class="tecnologia">CSS</span>
+                                    <span class="tecnologia">JAVASCRIPT</span>
+                                    <span class="tecnologia">SQL</span>        
+                                    <span class="tecnologia">Vocalcom</span>  
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </article>
+            <!--GERMED carta-->
+            <article class="carta inativo">
+                <div class="flip">         
+                    <section class="front-carta germed">
+                        <img src="img/imgProjetos/germed.png" alt="Carta Frente" class="img-carta"/>
+                    </section>
+                    <section class="back-carta">
+                        <div class="flip">         
+                            <section class="front-carta claro">
+                                <img src="img/imgProjetos/germed.png" alt="Carta Frente" class="img-carta"/>
+                            </section>
+                            <section class="back-carta">
+                                <h3>Germed - Projetos </h3>
+                                <p>Interfaces de vendas</p>
+                                <img src="img/imgProjetos/gemerd_inteface.png" alt="" class="img-interface">
+                                <div class="box-tags">
+                                    <span class="tecnologia">HTML</span>
+                                    <span class="tecnologia">CSS</span>
+                                    <span class="tecnologia">JAVASCRIPT</span>
+                                    <span class="tecnologia">SQL</span>        
+                                    <span class="tecnologia">Vocalcom</span>  
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </article>         
+        </div>
+        <span style="font-size:8pt;text-align: left; color: white;">*Imagens ilustrativas</span>
+    </div>
+    <div id="boxCarrousel" style="display: none;">
+        <div class="carousel">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)"></div>
+                  <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)"></div>
+                  <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>         
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript" src="javascript/cartas.js"></script>
+    <script type="text/javascript" src="javascript/carrousel.js"></script>
+    
+</body>
+</html>

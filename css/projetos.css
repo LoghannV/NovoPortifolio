@@ -1,0 +1,155 @@
+#boxProject{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(45deg,#363632,#777769,#4e4e47,#47473b);
+    background-size: 300% 300%;
+    animation: animarFundo 15s infinite;
+}
+#boxProject h2{
+    font-size: 3em;
+    color: white;
+    font-weight: 800;
+}
+.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+.carta{
+    position: relative;
+    height: 350px;
+    width: 300px;
+    margin: 5px;
+    perspective: 1000px;
+    
+}
+.ativo{
+    animation: sobeDesce 1s;
+}
+.inativo{
+    animation: desceSobi 1s;
+    opacity: .25;
+    top:150px;
+}
+.ativo:nth-child(2){
+    animation-delay: .02s;
+}
+.ativo:nth-child(3){
+    animation-delay: .03s;
+}
+.carta .flip{
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    min-height: 350px;
+}
+.carta:hover .flip{
+    transform: rotateY(180deg);
+}
+
+.front-carta, .back-carta{
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 12px;
+}
+.back-carta{
+    transform: rotateY(180deg);
+}
+.front-carta img, .back-carta img{
+    border-radius: 12px;
+    width: 300px;
+    height: 350px;
+}
+.claro,.germed{
+    background-color: white;
+}
+.claro img{
+    margin: 22% 15%;
+    width: 70%;
+    height: 70%;
+}
+.germed img{
+    margin: 45% 15%;
+    width: 70%;
+    height: 70%;
+}
+.back-carta{
+    background-color: white;
+    height: 350px;
+    width: 300px;
+}
+.back-carta p{
+    text-align: center;
+}
+.back-carta .img-interface{
+    display: block;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    margin: auto auto;
+}
+.back-carta h3{
+    text-align: center;
+    font-weight: 600;
+}
+.box-tags{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.tecnologia{
+    font-size: 10pt;
+    background-color: lightgray;
+    letter-spacing: .03em;
+    padding: 2px;
+    border-radius: 5px;
+}
+.carta h3,p{
+    font-size: 12pt;
+    margin: 0px;
+}
+
+@keyframes animarFundo{
+    0%{
+        background-position: 50% 100%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 50% 100%;
+    }
+}
+@keyframes sobeDesce{
+    0%{
+        opacity: 0.25;
+        top:200px;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+        top:0px;
+    }
+}
+@keyframes desceSobi {
+    0%{
+        opacity: 1;
+        top:0px;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 0.25;
+        top:150px;
+    }
+}

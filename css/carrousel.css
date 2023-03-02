@@ -1,0 +1,23 @@
+#boxCarrousel{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(#23242b,#4b4b4b);
+    background-size: 300% 300%;  
+}
+
+  .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
